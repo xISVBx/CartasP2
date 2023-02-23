@@ -6,89 +6,106 @@ function Card(props) {
     const handleclick = () => {
         setIsFlipped(!isFlipped)
     }
-  return (
-    <ReactCardFlip isFlipped={isFlipped} containerClassName='card' flipDirection="horizontal" >
-        <div className="front">
-            <div className="clash-card barbarian pattern2">
-            <div class="bookmark"></div>
-                <div className="clash-card__image">
-                    <img className="clash-card__barbarian" src={'../../public/img/barbaro.jpg'} alt="Barbarian" />
+    return (
+        <ReactCardFlip isFlipped={isFlipped} containerClassName='card' flipDirection="horizontal" >
+            <div className='marca'>
+                <div className='clavo clavo-first'>
+                    <div className='clavo-borde'/>
                 </div>
-                <div className="clash-card__unit-name ">Tank warrior</div>
-                
-                <div className='clash-card__stats grid grid-cols-3 gap-2'>
-                    <div className='flex justify-center align-middle'>
-                        <img className='h-5 mt-1' src='../../public/img/crown.png'/>
-                        <p className='font-bold text-base'>11</p>
-                    </div>
-                    <div className='flex justify-center align-middle'>
-                        <img className='h-5 mt-1' src='../../public/img/green-love.png'/>
-                        <p className='font-bold text-base'>11</p>
-                    </div>
-                    <div className='flex justify-center align-middle'>
-                        <img className='h-5 mt-1' src='../../public/img/wooden.png'/>
-                        <p className='font-bold text-base'>11</p>
-                    </div>
-                    <div className='flex justify-around align-middle col-span-3 flex-row'>
-                        <div className='flex-row flex'>
-                            <img className='h-5 mt-1' src='../../public/img/sword.png'/>
-                            <p className='font-bold text-base'>(1d6)</p>
+                <div className='clavo clavo-second'>
+                    <div className='clavo-borde'/>
+                </div>
+                <div className='clavo clavo-third'>
+                    <div className='clavo-borde'/>
+                </div>
+                <div className='clavo clavo-third'>
+                    <div className='clavo-borde'/>
+                </div>
+                <div className='clavo clavo-forth'>
+                    <div className='clavo-borde'/>
+                </div>
+                <div className="front">
+                    <div className="clash-card barbarian pattern2">
+                        <div class="bookmark"></div>
+                        <div className="clash-card__image">
+                            <img className="clash-card__barbarian" src={'../../public/img/barbaro.jpg'} alt="Barbarian" />
                         </div>
-                        <div className='flex justify-around align-middle col-span-3 flex-row'>
-                            <img className='h-5 mt-1' src='../../public/img/swords.png'/>
-                            <p className='font-bold text-base'>110+(1d6)</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='flex flex-row justify-center mt-1 relative' >
-                    <div className='pattern1 cuerda absolute'/>
-                    <div className='placa '>
-                        <div className='flex flex-row items-center'>
-                            <p className='font-bold text-base line-through pl-1 pr-1'>
-                                $50.000
-                            </p>
-                            <p className='text-xs align-middle pr-1 font-bold'>
-                                40.000
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className='card-footer pattern4 justify-center flex align-middle'>
-                    <button id='btn-fav'>
-                    <i className="fa-solid fa-regular fa-heart"></i>
-                    </button>
-                    <button id='btn-car' className='hover:text-red-300'>
-                        <i className="fa-solid fa-cart-shopping"></i>
-                    </button>
-                    <button id='btn-rotate' className='justify-center align-middle' onClick={handleclick}>
-                        <i className="fa-solid fa-rotate"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div className='back'>
-            <div className="clash-card barbarian pattern2">
-                
-                <div className="clash-card__unit-name">Description</div>
-                <div className="clash-card__unit-description">
-                    The Barbarian is a single target melee troop that have a hight damage
-                </div>
-                <div className='card-footer pattern4'>
-                    <button id='btn-fav'>
-                    <i className="fa-sharp fa-regular fa-heart "></i>
-                    </button>
-                    <button id='btn-car'>
-                        <i className="fa-solid fa-cart-shopping"></i>
-                    </button>
-                    <button id='btn-rotate' onClick={handleclick}>
-                        <i className="fa-solid fa-rotate"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+                        <div className="clash-card__unit-name ">Tank warrior</div>
 
-    </ReactCardFlip>
-  )
+                        <div className='clash-card__stats grid grid-cols-3 gap-2'>
+                            <div className='flex justify-center align-middle'>
+                                <img className='h-5 mt-1' src='../../public/img/crown.png' />
+                                <p className='font-bold text-base'>11</p>
+                            </div>
+                            <div className='flex justify-center align-middle'>
+                                <img className='h-5 mt-1' src='../../public/img/green-love.png' />
+                                <p className='font-bold text-base'>11</p>
+                            </div>
+                            <div className='flex justify-center align-middle'>
+                                <img className='h-5 mt-1' src='../../public/img/wooden.png' />
+                                <p className='font-bold text-base'>11</p>
+                            </div>
+                            <div className='flex justify-around align-middle col-span-3 flex-row'>
+                                <div className='flex-row flex'>
+                                    <img className='h-5 mt-1' src='../../public/img/sword.png' />
+                                    <p className='font-bold text-base'>(1d6)</p>
+                                </div>
+                                <div className='flex justify-around align-middle col-span-3 flex-row'>
+                                    <img className='h-5 mt-1' src='../../public/img/swords.png' />
+                                    <p className='font-bold text-base'>110+(1d6)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex flex-row justify-center mt-1 relative' >
+                            <div className='pattern1 cuerda absolute' />
+                            <div className='placa '>
+                                <div className='flex flex-row items-center'>
+                                    <p className='font-bold text-base line-through pl-1 pr-1'>
+                                        $50.000
+                                    </p>
+                                    <p className='text-xs align-middle pr-1 font-bold'>
+                                        40.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='card-footer pattern4 justify-center flex align-middle'>
+                            <button id='btn-fav'>
+                                <i className="fa-solid fa-regular fa-heart"></i>
+                            </button>
+                            <button id='btn-car' className='hover:text-red-300'>
+                                <i className="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button id='btn-rotate' className='justify-center align-middle' onClick={handleclick}>
+                                <i className="fa-solid fa-rotate"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='back'>
+                <div className="clash-card barbarian pattern2">
+
+                    <div className="clash-card__unit-name">Description</div>
+                    <div className="clash-card__unit-description">
+                        The Barbarian is a single target melee troop that have a hight damage
+                    </div>
+                    <div className='card-footer pattern4'>
+                        <button id='btn-fav'>
+                            <i className="fa-sharp fa-regular fa-heart "></i>
+                        </button>
+                        <button id='btn-car'>
+                            <i className="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button id='btn-rotate' onClick={handleclick}>
+                            <i className="fa-solid fa-rotate"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </ReactCardFlip>
+    )
 }
 
 export default Card
